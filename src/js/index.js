@@ -17,16 +17,22 @@ const s = function(p) {
 	}
 	p.setup = function() {
 		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.background(255,255,255);
 		reset();
 	}
 	p.draw = function() {
-		p.background(255,255,255);
-		p.rect(x, y + 100, 50, 50);
+		p.fill(0);
+		p.triangle(150, 400, 680, 400, 580, 115);
+		p.rect(300, 380, 430, 20);
+		p.line(150, 400, 650, 65);
+		p.strokeWeight(3);
+		p.ellipse()
+		p.text('SUZURI', 150, 420);
 
-		x += 3;
-		degree += 30;
-		rad = degree * Math.PI / 180;
-		y = Math.sin(rad) * 50;
+		// x += 3;
+		// degree += 30;
+		// rad = degree * Math.PI / 180;
+		// y = Math.sin(rad) * 50;
 	}
 }
 
