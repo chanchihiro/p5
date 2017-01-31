@@ -26,7 +26,12 @@ const s = function(p) {
 		p.rect(300, 380, 430, 20);
 		p.line(150, 400, 650, 65);
 		p.strokeWeight(3);
-		p.ellipse()
+		p.fill(255,255,255);
+		p.ellipse(450, 300, 100, 150);
+		p.ellipse(560, 265, 100, 145);
+		p.fill(0,0,0);
+		p.ellipse(570, 235, 40, 60);
+		p.ellipse(460, 270, 40, 60);
 		p.text('SUZURI', 150, 420);
 
 		// x += 3;
